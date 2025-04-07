@@ -2,16 +2,21 @@
 using MongoDB.Driver;
 using Microsoft.Extensions.Logging;
 using AppMongo;
+using Microsoft.AspNetCore.Mvc.Razor; // Añadido para RazorViewEngine
 
 var builder = WebApplication.CreateBuilder(args);
 
-// 1. Configuración de servicios (MVC + Razor Pages)
+// 1. Configuración de servicios (MVC + Rutas personalizadas)
 builder.Services.AddControllersWithViews()
+    .AddRazorOptions(options => {
+        // Ubicación personalizada de vistas
+        options.ViewLocationFormats.Add("/Pages/Views/{1}/{0}" + RazorViewEngine.ViewExtension);
+    })
     .AddRazorRuntimeCompilation();
 
-builder.Services.AddRazorPages();  // <-- Nueva línea agregada
+builder.Services.AddRazorPages();
 
-// 2. Configuración MongoDB (existente)
+// 2. Configuración MongoDB (original)
 builder.Services.Configure<MongoDBSettings>(
     builder.Configuration.GetSection("MongoDB"));
 
@@ -21,17 +26,17 @@ builder.Services.AddSingleton<IMongoClient>(serviceProvider =>
     return new MongoClient(settings.ConnectionString);
 });
 
-// 3. Registro de servicios (existente)
+// 3. Registro de servicios (original)
 builder.Services.AddScoped<SecurityService>();
 builder.Services.AddScoped<BackupService>();
 builder.Services.AddSingleton<ExportImportController>();
 
 var app = builder.Build();
 
-// Configurar escucha en todas las interfaces (existente)
+// Configurar escucha en todas las interfaces (original)
 app.Urls.Add("http://0.0.0.0:8080");
 
-// 4. Configuración del pipeline (modificado)
+// 4. Pipeline (original con ajuste de orden)
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Database/Error");
@@ -45,18 +50,14 @@ app.UseStaticFiles();
 app.UseRouting();
 app.UseAuthorization();
 
-// 5. Ruteo combinado (MVC + Razor Pages)
+// 5. Ruteo (original)
 app.UseEndpoints(endpoints =>
 {
-    // Mantener ruteo MVC existente
     endpoints.MapControllerRoute(
         name: "default",
         pattern: "{controller=Database}/{action=Index}/{id?}");
 
-    // Nueva configuración para Razor Pages
     endpoints.MapRazorPages();
-
-    // Mantener endpoint de salud
     endpoints.MapGet("/health", () => Results.Ok(new { status = "Healthy" }));
 });
 
