@@ -1,4 +1,4 @@
-using Microsoft.Extensions.Options;
+锘縰sing Microsoft.Extensions.Options;
 using MongoDB.Driver;
 using Microsoft.Extensions.Logging;
 using System.Diagnostics;
@@ -6,11 +6,11 @@ using AppMongo;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Configuraci髇 de servicios
+// Configuraci贸n de servicios
 builder.Services.AddControllersWithViews();
 builder.Services.AddLogging(configure => configure.AddConsole());
 
-// Configuraci髇 MongoDB con reintentos
+// Configuraci贸n MongoDB
 builder.Services.Configure<MongoDBSettings>(
     builder.Configuration.GetSection("MongoDB"));
 
@@ -19,13 +19,17 @@ builder.Services.AddSingleton<IMongoClient>(serviceProvider =>
     var settings = serviceProvider.GetRequiredService<IOptions<MongoDBSettings>>().Value;
     var clientSettings = MongoClientSettings.FromConnectionString(settings.ConnectionString);
 
-    clientSettings.ServerApi = new ServerApi(ServerApiVersion.V1);
+    // Configuraci贸n optimizada para MongoDB 4.4
     clientSettings.ConnectTimeout = TimeSpan.FromSeconds(30);
     clientSettings.ServerSelectionTimeout = TimeSpan.FromSeconds(30);
     clientSettings.MaxConnectionPoolSize = 100;
     clientSettings.RetryReads = true;
     clientSettings.RetryWrites = true;
     clientSettings.SocketTimeout = TimeSpan.FromSeconds(30);
+
+    // Configuraci贸n SSL/TLS (deshabilitado para entornos locales)
+    clientSettings.UseTls = false;
+    clientSettings.AllowInsecureTls = true;
 
     return new MongoClient(clientSettings);
 });
@@ -37,7 +41,7 @@ builder.Services.AddSingleton<ExportImportController>();
 
 var app = builder.Build();
 
-// Configuraci髇 del pipeline
+// Configuraci贸n del pipeline
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
@@ -55,18 +59,18 @@ app.MapControllerRoute(
 
 app.MapGet("/health", () => Results.Ok(new { status = "Healthy" }));
 
-// Verificaci髇 de conexi髇 a MongoDB
+// Verificaci贸n de conexi贸n a MongoDB
 using (var scope = app.Services.CreateScope())
 {
     try
     {
         var client = scope.ServiceProvider.GetRequiredService<IMongoClient>();
         await client.ListDatabaseNamesAsync();
-        Debug.WriteLine("Conexi髇 a MongoDB verificada");
+        Debug.WriteLine("SI Conexi贸n a MongoDB verificada");
     }
     catch (Exception ex)
     {
-        Debug.WriteLine($"Error de conexi髇 a MongoDB: {ex.Message}");
+        Debug.WriteLine($"X Error de conexi贸n a MongoDB: {ex.Message}");
         throw;
     }
 }
