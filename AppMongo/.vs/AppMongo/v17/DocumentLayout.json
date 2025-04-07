@@ -70,8 +70,7 @@
               "RelativeToolTip": "AppMongo.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-04-07T19:48:46.858Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-07T19:48:46.858Z"
             },
             {
               "$type": "Document",
@@ -81,7 +80,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\empan\\source\\repos\\AppMongoGestion\\AppMongo\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAACsAAAAAAAAAAAAYwDwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-31T08:19:11.476Z",
               "EditorCaption": ""
@@ -96,8 +95,7 @@
               "RelativeToolTip": "ExportImportController.cs",
               "ViewState": "AgIAADIAAAAAAAAAAAAowE8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T08:50:24.531Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T08:50:24.531Z"
             },
             {
               "$type": "Document",
@@ -109,8 +107,7 @@
               "RelativeToolTip": "MongoDBService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T08:48:35.915Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T08:48:35.915Z"
             },
             {
               "$type": "Document",
@@ -122,8 +119,7 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-31T08:15:46.33Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T08:15:46.33Z"
             },
             {
               "$type": "Document",
@@ -135,8 +131,7 @@
               "RelativeToolTip": "BackupService.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAowDgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T08:49:19.764Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T08:49:19.764Z"
             },
             {
               "$type": "Document",
@@ -148,8 +143,7 @@
               "RelativeToolTip": "SecurityService.cs",
               "ViewState": "AgIAAEIAAAAAAAAAAAAkwF4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T08:52:26.648Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T08:52:26.648Z"
             },
             {
               "$type": "Document",
@@ -161,8 +155,7 @@
               "RelativeToolTip": "Controller\\DatabaseController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T08:54:47.94Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T08:54:47.94Z"
             },
             {
               "$type": "Document",
@@ -174,8 +167,7 @@
               "RelativeToolTip": "Pages\\Views\\Database\\Index.cshtml",
               "ViewState": "AgIAAH0AAAAAAAAAAAAowJoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-31T09:18:28.523Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T09:18:28.523Z"
             },
             {
               "$type": "Document",
@@ -187,8 +179,7 @@
               "RelativeToolTip": "Pages\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-07T02:48:36.225Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-07T02:48:36.225Z"
             },
             {
               "$type": "Document",
@@ -200,8 +191,7 @@
               "RelativeToolTip": "Pages\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAgAAAAAAAAAAAAmwBgAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-31T09:18:52.177Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T09:18:52.177Z"
             },
             {
               "$type": "Document",
@@ -213,8 +203,7 @@
               "RelativeToolTip": "Pages\\Views\\Database\\Index.cshtml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T16:47:23.34Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T16:47:23.34Z"
             }
           ]
         }
