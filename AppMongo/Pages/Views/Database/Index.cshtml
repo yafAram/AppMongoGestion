@@ -1,0 +1,155 @@
+﻿@model List<string>
+@{
+    ViewData["Title"] = "Administrar MongoDB";
+}
+
+<div class="container mt-5">
+    <h2 class="mb-4">@ViewData["Title"]</h2>
+
+    <!-- Mensajes de estado -->
+    @if (TempData["Message"] != null)
+    {
+        <div class="alert alert-info alert-dismissible fade show">
+            @TempData["Message"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    <!-- Panel de creación -->
+    <div class="card shadow-sm mb-4">
+        <div class="card-header bg-primary text-white">
+            <h4 class="mb-0">
+                <i class="bi bi-database-add me-2"></i>Crear nueva base de datos
+            </h4>
+        </div>
+        <div class="card-body">
+            <form asp-action="CreateDatabase" method="post" class="row g-3">
+                <div class="col-md-8">
+                    <label for="databaseName" class="form-label">Nombre:</label>
+                    <input type="text" class="form-control" id="databaseName" name="databaseName"
+                           required pattern="[a-zA-Z0-9_\-]+" title="Solo letras, números, guiones y guiones bajos">
+                </div>
+                <div class="col-md-4 d-flex align-items-end">
+                    <button type="submit" class="btn btn-primary w-100">
+                        <i class="bi bi-plus-circle me-2"></i>Crear
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Listado de bases de datos -->
+    <div class="card shadow-sm">
+        <div class="card-header bg-secondary text-white">
+            <h4 class="mb-0">
+                <i class="bi bi-list-columns-reverse me-2"></i>Bases de datos existentes
+            </h4>
+        </div>
+        <div class="card-body p-0">
+            @if (Model.Any())
+            {
+                <div class="table-responsive">
+                    <table class="table table-hover mb-0">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var db in Model.OrderBy(d => d))
+                            {
+                                <tr>
+                                    <td>
+                                        <i class="bi bi-database text-primary me-2"></i>
+                                        @db
+                                        @if (db.Equals("admin", StringComparison.OrdinalIgnoreCase))
+                                        {
+                                            <span class="badge bg-warning text-dark ms-2">Sistema</span>
+                                        }
+                                    </td>
+                                    <td>
+                                        @if (!db.Equals("admin", StringComparison.OrdinalIgnoreCase))
+                                        {
+                                            <form asp-action="DeleteDatabase" method="post" class="d-inline">
+                                                <input type="hidden" name="databaseName" value="@db" />
+                                                <button type="submit" class="btn btn-sm btn-danger"
+                                                        onclick="return confirm('¿Estás seguro de eliminar la base de datos \'@db\'?\n¡Esta acción no se puede deshacer!')">
+                                                    <i class="bi bi-trash"></i> Eliminar
+                                                </button>
+                                            </form>
+                                        }
+                                        <a href="@Url.Action("Manage", new { databaseName = db })" class="btn btn-sm btn-outline-primary ms-2">
+                                            <i class="bi bi-gear"></i> Gestionar
+                                        </a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+            else
+            {
+                <div class="text-center py-4">
+                    <i class="bi bi-database-x" style="font-size: 2rem;"></i>
+                    <p class="mt-2 text-muted">No hay bases de datos disponibles</p>
+                </div>
+            }
+        </div>
+    </div>
+
+    <!-- Estadísticas (opcional) -->
+    <div class="mt-4 text-end">
+        <small class="text-muted">Total: @Model.Count bases de datos</small>
+    </div>
+</div>
+
+<!-- Modal de confirmación (para Bootstrap 5) -->
+<div class="modal fade" id="confirmModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Confirmar eliminación</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                ¿Estás seguro de eliminar esta base de datos? ¡Todos los datos se perderán permanentemente!
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-danger" id="confirmDelete">Eliminar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // Mejor manejo de confirmaciones
+        document.addEventListener('DOMContentLoaded', function() {
+            // Inicializar tooltips de Bootstrap
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+            tooltipTriggerList.map(function (element) {
+                return new bootstrap.Tooltip(element);
+            });
+
+            // Manejar el modal de confirmación
+            var confirmModal = new bootstrap.Modal(document.getElementById('confirmModal'));
+            var deleteForm;
+
+            document.querySelectorAll('form[asp-action="DeleteDatabase"]').forEach(form => {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    deleteForm = this;
+                    confirmModal.show();
+                });
+            });
+
+            document.getElementById('confirmDelete').addEventListener('click', function() {
+                deleteForm.submit();
+                confirmModal.hide();
+            });
+        });
+    </script>
+}
