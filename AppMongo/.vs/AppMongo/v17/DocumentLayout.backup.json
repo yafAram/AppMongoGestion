@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\empan\\source\\repos\\AppMongoGestion\\AppMongo\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A0A39424-BAB8-4AE1-BFC4-BE8A8463398D}|AppMongo.csproj|c:\\users\\empan\\source\\repos\\appmongogestion\\appmongo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0A39424-BAB8-4AE1-BFC4-BE8A8463398D}|AppMongo.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A0A39424-BAB8-4AE1-BFC4-BE8A8463398D}|AppMongo.csproj|c:\\users\\empan\\source\\repos\\appmongogestion\\appmongo\\backupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A0A39424-BAB8-4AE1-BFC4-BE8A8463398D}|AppMongo.csproj|solutionrelative:backupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A0A39424-BAB8-4AE1-BFC4-BE8A8463398D}|AppMongo.csproj|c:\\users\\empan\\source\\repos\\appmongogestion\\appmongo\\controller\\databasecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A0A39424-BAB8-4AE1-BFC4-BE8A8463398D}|AppMongo.csproj|solutionrelative:controller\\databasecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0A39424-BAB8-4AE1-BFC4-BE8A8463398D}|AppMongo.csproj|c:\\users\\empan\\source\\repos\\appmongogestion\\appmongo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0A39424-BAB8-4AE1-BFC4-BE8A8463398D}|AppMongo.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A0A39424-BAB8-4AE1-BFC4-BE8A8463398D}|AppMongo.csproj|c:\\users\\empan\\source\\repos\\appmongogestion\\appmongo\\securityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -54,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
@@ -82,19 +82,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\empan\\source\\repos\\AppMongoGestion\\AppMongo\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\empan\\source\\repos\\AppMongoGestion\\AppMongo\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAGYAAAAAAAAAAAAgwJoAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAADIAAAAAAAAAAAAnwFIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T08:19:11.476Z"
+              "WhenOpened": "2025-03-31T08:19:11.476Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "DatabaseController.cs",
               "DocumentMoniker": "C:\\Users\\empan\\source\\repos\\AppMongoGestion\\AppMongo\\Controller\\DatabaseController.cs",
               "RelativeDocumentMoniker": "Controller\\DatabaseController.cs",
@@ -106,7 +107,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\empan\\source\\repos\\AppMongoGestion\\AppMongo\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -142,7 +143,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ExportImportController.cs",
               "DocumentMoniker": "C:\\Users\\empan\\source\\repos\\AppMongoGestion\\AppMongo\\ExportImportController.cs",
               "RelativeDocumentMoniker": "ExportImportController.cs",
@@ -154,7 +155,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "BackupService.cs",
               "DocumentMoniker": "C:\\Users\\empan\\source\\repos\\AppMongoGestion\\AppMongo\\BackupService.cs",
               "RelativeDocumentMoniker": "BackupService.cs",
@@ -162,8 +163,7 @@
               "RelativeToolTip": "BackupService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAACFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T08:49:19.764Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T08:49:19.764Z"
             },
             {
               "$type": "Document",

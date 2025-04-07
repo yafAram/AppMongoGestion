@@ -1,31 +1,57 @@
 ﻿using System.Diagnostics;
 
-namespace AppMongo
+namespace AppMongo.Services
 {
     public class BackupService
     {
+        private readonly ILogger<BackupService> _logger;
+
+        public BackupService(ILogger<BackupService> logger)
+        {
+            _logger = logger;
+        }
+
         public async Task<string> CreateBackupAsync(string databaseName)
         {
-            var timestamp = DateTime.Now.ToString("yyyyMMddHHmmss");
-            var backupPath = $"/backups/{databaseName}_{timestamp}"; // Ruta correcta
-
-            var process = new Process
+            try
             {
-                StartInfo = new ProcessStartInfo
+                var timestamp = DateTime.Now.ToString("yyyyMMddHHmmss");
+                var backupPath = $"/backups/{databaseName}_{timestamp}";
+
+                var process = new Process
                 {
-                    FileName = "mongodump", // Ejecutar directamente desde el contenedor webapp
-                    Arguments = $"--uri=\"mongodb://root:example@mongodb:27017/{databaseName}?authSource=admin\" --out {backupPath}",
-                    RedirectStandardError = true,
-                    RedirectStandardOutput = true
+                    StartInfo = new ProcessStartInfo
+                    {
+                        FileName = "mongodump",
+                        Arguments = $"--uri=\"mongodb://root:example@mongodb:27017/{databaseName}?authSource=admin\" " +
+                                    $"--out {backupPath} " +
+                                    "--gzip",
+                        RedirectStandardError = true,
+                        RedirectStandardOutput = true,
+                        CreateNoWindow = true
+                    }
+                };
+
+                _logger.LogInformation("Iniciando backup para {Database}", databaseName);
+                process.Start();
+
+                var errors = await process.StandardError.ReadToEndAsync();
+                await process.WaitForExitAsync();
+
+                if (process.ExitCode != 0)
+                {
+                    _logger.LogError("Error en backup: {Error}", errors);
+                    return $"Error: {errors}";
                 }
-            };
 
-            process.Start();
-            await process.WaitForExitAsync();
-
-            return process.ExitCode == 0
-                ? $"Backup creado en: {backupPath}"
-                : $"Error: {await process.StandardError.ReadToEndAsync()}";
+                _logger.LogInformation("Backup completado para {Database}", databaseName);
+                return $"Backup creado en: {backupPath}";
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error al crear backup");
+                return $"Error: {ex.Message}";
+            }
         }
     }
 }
