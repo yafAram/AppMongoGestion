@@ -9,7 +9,7 @@ namespace AppMongo.Controllers
     public class ExportImportController : Controller
     {
         private readonly string _uploadsPath = "/backups/uploads"; // Usamos el volumen compartido
-        private readonly string _mongoUri = "mongodb://admin:AdminPassword123@mongo:27017"; // Cadena de conexión
+        private readonly string _mongoUri = "mongodb://root:example@mongodb:27017?authSource=admin";
 
         [HttpPost]
         public async Task<IActionResult> Import(string databaseName, IFormFile file)

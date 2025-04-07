@@ -14,7 +14,7 @@ namespace AppMongo
                 StartInfo = new ProcessStartInfo
                 {
                     FileName = "mongodump", // Ejecutar directamente desde el contenedor webapp
-                    Arguments = $"--uri=\"mongodb://admin:AdminPassword123@mongo:27017/{databaseName}?authSource=admin\" --out {backupPath}",
+                    Arguments = $"--uri=\"mongodb://root:example@mongodb:27017/{databaseName}?authSource=admin\" --out {backupPath}",
                     RedirectStandardError = true,
                     RedirectStandardOutput = true
                 }
