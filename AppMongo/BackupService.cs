@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 
-namespace AppMongo.Services
+namespace AppMongo
 {
     public class BackupService
     {

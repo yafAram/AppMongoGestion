@@ -4,7 +4,7 @@ using System;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 
-namespace AppMongo.Services
+namespace AppMongo
 {
     public class SecurityService
     {

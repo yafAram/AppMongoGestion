@@ -1,6 +1,5 @@
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
-using AppMongo.Services;
 using Microsoft.Extensions.Logging;
 using System.Diagnostics;
 using AppMongo;
@@ -34,7 +33,7 @@ builder.Services.AddSingleton<IMongoClient>(serviceProvider =>
 // Registro de servicios
 builder.Services.AddScoped<SecurityService>();
 builder.Services.AddScoped<BackupService>();
-builder.Services.AddSingleton<ExportImportService>();
+builder.Services.AddSingleton<ExportImportController>();
 
 var app = builder.Build();
 

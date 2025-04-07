@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 
-namespace AppMongo.Controllers
+namespace AppMongo
 {
     public class ExportImportController : Controller
     {
