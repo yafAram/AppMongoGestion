@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\empan\\source\\repos\\AppMongoGestion\\AppMongo\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A0A39424-BAB8-4AE1-BFC4-BE8A8463398D}|AppMongo.csproj|c:\\users\\empan\\source\\repos\\appmongogestion\\appmongo\\pages\\views\\database\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0A39424-BAB8-4AE1-BFC4-BE8A8463398D}|AppMongo.csproj|solutionrelative:pages\\views\\database\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A0A39424-BAB8-4AE1-BFC4-BE8A8463398D}|AppMongo.csproj|c:\\users\\empan\\source\\repos\\appmongogestion\\appmongo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A0A39424-BAB8-4AE1-BFC4-BE8A8463398D}|AppMongo.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0A39424-BAB8-4AE1-BFC4-BE8A8463398D}|AppMongo.csproj|c:\\users\\empan\\source\\repos\\appmongogestion\\appmongo\\pages\\views\\database\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A0A39424-BAB8-4AE1-BFC4-BE8A8463398D}|AppMongo.csproj|solutionrelative:pages\\views\\database\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A0A39424-BAB8-4AE1-BFC4-BE8A8463398D}|AppMongo.csproj|c:\\users\\empan\\source\\repos\\appmongogestion\\appmongo\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -31,20 +39,8 @@
       "RelativeMoniker": "D:0:0:{A0A39424-BAB8-4AE1-BFC4-BE8A8463398D}|AppMongo.csproj|solutionrelative:backupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A0A39424-BAB8-4AE1-BFC4-BE8A8463398D}|AppMongo.csproj|c:\\users\\empan\\source\\repos\\appmongogestion\\appmongo\\controller\\databasecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0A39424-BAB8-4AE1-BFC4-BE8A8463398D}|AppMongo.csproj|solutionrelative:controller\\databasecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0A39424-BAB8-4AE1-BFC4-BE8A8463398D}|AppMongo.csproj|c:\\users\\empan\\source\\repos\\appmongogestion\\appmongo\\pages\\views\\database\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A0A39424-BAB8-4AE1-BFC4-BE8A8463398D}|AppMongo.csproj|solutionrelative:pages\\views\\database\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A0A39424-BAB8-4AE1-BFC4-BE8A8463398D}|AppMongo.csproj|c:\\users\\empan\\source\\repos\\appmongogestion\\appmongo\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A0A39424-BAB8-4AE1-BFC4-BE8A8463398D}|AppMongo.csproj|solutionrelative:pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0A39424-BAB8-4AE1-BFC4-BE8A8463398D}|AppMongo.csproj|c:\\users\\empan\\source\\repos\\appmongogestion\\appmongo\\pages\\views\\database\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0A39424-BAB8-4AE1-BFC4-BE8A8463398D}|AppMongo.csproj|solutionrelative:pages\\views\\database\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A0A39424-BAB8-4AE1-BFC4-BE8A8463398D}|AppMongo.csproj|c:\\users\\empan\\source\\repos\\appmongogestion\\appmongo\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -58,36 +54,74 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AppMongo.csproj",
-              "DocumentMoniker": "C:\\Users\\empan\\source\\repos\\AppMongoGestion\\AppMongo\\AppMongo.csproj",
-              "RelativeDocumentMoniker": "AppMongo.csproj",
-              "ToolTip": "C:\\Users\\empan\\source\\repos\\AppMongoGestion\\AppMongo\\AppMongo.csproj",
-              "RelativeToolTip": "AppMongo.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-04-07T19:48:46.858Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\empan\\source\\repos\\AppMongoGestion\\AppMongo\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\empan\\source\\repos\\AppMongoGestion\\AppMongo\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAYwDwAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-31T08:19:11.476Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
+              "Title": "MongoDBService.cs",
+              "DocumentMoniker": "C:\\Users\\empan\\source\\repos\\AppMongoGestion\\AppMongo\\MongoDBService.cs",
+              "RelativeDocumentMoniker": "MongoDBService.cs",
+              "ToolTip": "C:\\Users\\empan\\source\\repos\\AppMongoGestion\\AppMongo\\MongoDBService.cs",
+              "RelativeToolTip": "MongoDBService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T08:48:35.915Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\empan\\source\\repos\\AppMongoGestion\\AppMongo\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\empan\\source\\repos\\AppMongoGestion\\AppMongo\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-31T08:15:46.33Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\empan\\source\\repos\\AppMongoGestion\\AppMongo\\Pages\\Views\\Database\\Index.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Views\\Database\\Index.cshtml",
+              "ToolTip": "C:\\Users\\empan\\source\\repos\\AppMongoGestion\\AppMongo\\Pages\\Views\\Database\\Index.cshtml",
+              "RelativeToolTip": "Pages\\Views\\Database\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGwAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-31T09:18:28.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\empan\\source\\repos\\AppMongoGestion\\AppMongo\\Pages\\Views\\Database\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Views\\Database\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\empan\\source\\repos\\AppMongoGestion\\AppMongo\\Pages\\Views\\Database\\Index.cshtml.cs",
+              "RelativeToolTip": "Pages\\Views\\Database\\Index.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T16:47:23.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "ExportImportController.cs",
               "DocumentMoniker": "C:\\Users\\empan\\source\\repos\\AppMongoGestion\\AppMongo\\ExportImportController.cs",
               "RelativeDocumentMoniker": "ExportImportController.cs",
@@ -100,30 +134,18 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "MongoDBService.cs",
-              "DocumentMoniker": "C:\\Users\\empan\\source\\repos\\AppMongoGestion\\AppMongo\\MongoDBService.cs",
-              "RelativeDocumentMoniker": "MongoDBService.cs",
-              "ToolTip": "C:\\Users\\empan\\source\\repos\\AppMongoGestion\\AppMongo\\MongoDBService.cs",
-              "RelativeToolTip": "MongoDBService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T08:48:35.915Z"
+              "Title": "AppMongo.csproj",
+              "DocumentMoniker": "C:\\Users\\empan\\source\\repos\\AppMongoGestion\\AppMongo\\AppMongo.csproj",
+              "RelativeDocumentMoniker": "AppMongo.csproj",
+              "ToolTip": "C:\\Users\\empan\\source\\repos\\AppMongoGestion\\AppMongo\\AppMongo.csproj",
+              "RelativeToolTip": "AppMongo.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-07T19:48:46.858Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\empan\\source\\repos\\AppMongoGestion\\AppMongo\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\empan\\source\\repos\\AppMongoGestion\\AppMongo\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-31T08:15:46.33Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "BackupService.cs",
               "DocumentMoniker": "C:\\Users\\empan\\source\\repos\\AppMongoGestion\\AppMongo\\BackupService.cs",
               "RelativeDocumentMoniker": "BackupService.cs",
@@ -135,7 +157,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "SecurityService.cs",
               "DocumentMoniker": "C:\\Users\\empan\\source\\repos\\AppMongoGestion\\AppMongo\\SecurityService.cs",
               "RelativeDocumentMoniker": "SecurityService.cs",
@@ -144,30 +166,6 @@
               "ViewState": "AgIAAEIAAAAAAAAAAAAkwF4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-31T08:52:26.648Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "DatabaseController.cs",
-              "DocumentMoniker": "C:\\Users\\empan\\source\\repos\\AppMongoGestion\\AppMongo\\Controller\\DatabaseController.cs",
-              "RelativeDocumentMoniker": "Controller\\DatabaseController.cs",
-              "ToolTip": "C:\\Users\\empan\\source\\repos\\AppMongoGestion\\AppMongo\\Controller\\DatabaseController.cs",
-              "RelativeToolTip": "Controller\\DatabaseController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T08:54:47.94Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\empan\\source\\repos\\AppMongoGestion\\AppMongo\\Pages\\Views\\Database\\Index.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Views\\Database\\Index.cshtml",
-              "ToolTip": "C:\\Users\\empan\\source\\repos\\AppMongoGestion\\AppMongo\\Pages\\Views\\Database\\Index.cshtml",
-              "RelativeToolTip": "Pages\\Views\\Database\\Index.cshtml",
-              "ViewState": "AgIAAH0AAAAAAAAAAAAowJoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-31T09:18:28.523Z"
             },
             {
               "$type": "Document",
@@ -183,7 +181,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\empan\\source\\repos\\AppMongoGestion\\AppMongo\\Pages\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Pages\\Shared\\_Layout.cshtml",
@@ -192,18 +190,6 @@
               "ViewState": "AgIAAAgAAAAAAAAAAAAmwBgAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-31T09:18:52.177Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\empan\\source\\repos\\AppMongoGestion\\AppMongo\\Pages\\Views\\Database\\Index.cshtml.cs",
-              "RelativeDocumentMoniker": "Pages\\Views\\Database\\Index.cshtml.cs",
-              "ToolTip": "C:\\Users\\empan\\source\\repos\\AppMongoGestion\\AppMongo\\Pages\\Views\\Database\\Index.cshtml.cs",
-              "RelativeToolTip": "Pages\\Views\\Database\\Index.cshtml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T16:47:23.34Z"
             }
           ]
         }
