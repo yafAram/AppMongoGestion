@@ -4,6 +4,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+	  <EnableDefaultContentItems>false</EnableDefaultContentItems>
   </PropertyGroup>
 
   <ItemGroup>
@@ -11,5 +12,6 @@
     <PackageReference Include="MongoDB.Driver" Version="2.18.0" />
 	  <Content Include="Pages\Views\**\*.cshtml" CopyToPublishDirectory="PreserveNewest" />
   </ItemGroup>
+
 
 </Project>
