@@ -42,10 +42,9 @@ namespace AppMongo
                             ["db"] = database
                         }
                     },
-                    ["customData"] = customData != null ? new BsonDocument
-                    {
-                        ["description"] = customData
-                    } : BsonNull.Value,
+                    ["customData"] = string.IsNullOrEmpty(customData)
+    ? BsonNull.Value
+    : new BsonDocument { ["description"] = customData }
                     ["mechanisms"] = new BsonArray("SCRAM-SHA-256"), // Fuerza mecanismo seguro
                     ["digestPassword"] = true
                 };
